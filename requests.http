@@ -1,0 +1,39 @@
+### Health Check
+GET http://localhost:8080/tricol/api/ping
+
+### Get all fournisseurs
+GET http://localhost:8080/tricol/api/v1/fournisseurs
+
+### Get fournisseur by ID
+GET http://localhost:8080/tricol/api/v1/fournisseurs/1
+
+### Create a new fournisseur
+POST http://localhost:8080/tricol/api/v1/fournisseurs
+Content-Type: application/json
+
+{
+  "societe": "Acme Corporation",
+  "adresse": "123 Rue de la Paix",
+  "contact": "John Doe",
+  "email": "john.doe@acme.com",
+  "telephone": "+212 5 12 34 56 78",
+  "ville": "Casablanca",
+  "ice": "ICE123456789"
+}
+
+### Update fournisseur by ID
+PUT http://localhost:8080/tricol/api/v1/fournisseurs/1
+Content-Type: application/json
+
+{
+  "societe": "Acme Corporation Updated",
+  "adresse": "456 Rue de la Liberté",
+  "contact": "Jane Smith",
+  "email": "jane.smith@acme.com",
+  "telephone": "+212 5 98 76 54 32",
+  "ville": "Rabat",
+  "ice": "ICE987654321"
+}
+
+### Delete fournisseur by ID
+DELETE http://localhost:8080/tricol/api/v1/fournisseurs/1

@@ -22,8 +22,8 @@ public class FournisseurService {
     }
 
     @Transactional
-    public void save(Fournisseur f) {
-        fournisseurRepository.save(f);
+    public Fournisseur save(Fournisseur f) {
+        return fournisseurRepository.save(f);
     }
 
     public void deleteById(Long id) {
