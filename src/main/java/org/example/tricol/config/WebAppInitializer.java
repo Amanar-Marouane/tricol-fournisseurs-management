@@ -4,6 +4,7 @@ import org.example.tricol.utils.Console;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
     public WebAppInitializer() {
         Console.header("WEB APP INITIALIZER");
     }
@@ -15,7 +16,7 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] { WebMvcConfig.class };
+        return null;
     }
 
     @Override
